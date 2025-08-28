@@ -1,43 +1,42 @@
-MakroScraperBot
+**MakroScraperBot**
 
 MakroScraperBot is a Python project that scrapes product data from Makro and provides a LINE Bot to browse categories, search products, and view product details.
 
-Features
+**Features**
 
-Scrape product name, price, image, and link
+    Scrape product name, price, image, and link
 
-Fetch detailed product info (weight/quantity)
+    Fetch detailed product info (weight/quantity)
+    
+    Browse product categories via LINE carousel
+    
+    Search products by name
 
-Browse product categories via LINE carousel
+    View detailed product info in LINE chat
 
-Search products by name
+**Setup**
 
-View detailed product info in LINE chat
+    Install dependencies:pip install -r requirements.txt
+    
+    Run ngrok to expose your local server: ngrok http 5000
+    
+    Copy the HTTPS URL from ngrok and set it as your LINE Bot webhook URL
+    
+    Run the Flask app: python app.py
 
-Setup
+**Usage**
+    Send “hi” or “menu” in LINE to see product categories
+        
+    Select a category to view products
+        
+    Click a product to see detailed info
 
-Install dependencies: pip install -r requirements.txt
+**Built With**
 
-Run ngrok to expose your local server: ngrok http 5000
-
-Copy the HTTPS URL from ngrok and set it as your LINE Bot webhook URL
-
-Run the Flask app: python app.py
-
-Usage
-
-Send “hi” or “menu” in LINE to see product categories
-
-Select a category to view products
-
-Click a product to see detailed info
-
-Built With
-
-Python
-
-Selenium & BeautifulSoup for web scraping
-
-Flask for webhook server
-
-LINE Messaging API for chatbot
+    Python
+    
+    Selenium & BeautifulSoup for web scraping
+    
+    Flask for webhook server
+    
+    LINE Messaging API for chatbot
